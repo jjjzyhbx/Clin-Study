@@ -26,6 +26,13 @@ public class demo {
                 Dot d3 = getDot();
                 System.out.println("三角面如下");
                 board.addShape(new Triangle(d1, d2, d3));
+            }else if(choice==4){
+                Shape shape=new Shape() {
+                    @Override
+                    public void draw() {
+                        System.out.println("我画的自定义图形");
+                    }
+                };
             }
             board.show();   // 显示图形
         }
@@ -38,6 +45,7 @@ public class demo {
         System.out.println("1. 画点");
         System.out.println("2. 画线");
         System.out.println("3. 画三角形面");
+        System.out.println("4. 自定义图形");
         int choice = in.nextInt();
         return choice;
     }

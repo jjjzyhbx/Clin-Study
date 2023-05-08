@@ -11,8 +11,11 @@ public class test {
         an.eat();
 
 
-//        实验任务2、设计一个长方形类，有两个属性（长度和宽度），有求面积的方法。编写主类测试其正确性。
-        rectangle re=new rectangle(3.14,2);
+//        实验任务2、设计一个长方形类，有两个属性（长度和宽度），有求面积的方法。编写主类测试其正确性
+//
+
+        rectangle re=new rectangle(3,4);
+        System.out.println("长为3，宽为4的长方形面积为");
         System.out.println(re.area());
 
 

@@ -42,7 +42,7 @@ public class Line implements Shape {
     public String toString() {
         return "Line{" +
                  start.toString() +
-                "->" + end.toString() +
+                "<->" + end.toString() +
                 '}';
     }
 }
