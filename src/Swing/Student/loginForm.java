@@ -18,19 +18,11 @@ public class loginForm extends JFrame {
 
     public loginForm() {
         //设置标题,大小
-        //设置标题
         setTitle("登录");
 
         //设置窗体大小及GridLayout布局
         setSize(300, 200);
         setLayout(new GridLayout(3, 2));
-//设置组件大小
-//        lblUsername.setPreferredSize(new Dimension(60, 25));
-//        txtUsername.setPreferredSize(new Dimension(200, 25));
-//        lblPassword.setPreferredSize(new Dimension(60, 25));
-//        txtPassword.setPreferredSize(new Dimension(200, 25));
-//        btnLogin.setPreferredSize(new Dimension(100, 30));
-//        btnCancel.setPreferredSize(new Dimension(100, 30));
         panel = new JPanel();
         add(panel);
 
@@ -67,7 +59,7 @@ public class loginForm extends JFrame {
         panel.add(btnLogin);
 
         //取消按钮
-        btnCancel = new JButton("取消");
+        btnCancel = new JButton("注册");
         btnCancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

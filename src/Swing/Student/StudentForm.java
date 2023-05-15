@@ -50,56 +50,56 @@ public class StudentForm extends JFrame {
         panelRight = new JPanel();
         panelRight.setPreferredSize(new Dimension(600, 500));
         add(panelRight, BorderLayout.EAST);
-//
-//        //姓名标签和文本框
-//        lblName = new JLabel("姓名:");
-//        lblName.setFont(new Font("Arial", Font.PLAIN, 15));
-//        panelLeft.add(lblName);
-//        txtName = new JTextField(15);
-//        txtName.setFont(new Font("Arial", Font.PLAIN, 15));
-//        panelLeft.add(txtName);
-//
-//        //性别标签,单选按钮
-//        lblGender = new JLabel("性别:");
-//        lblGender.setFont(new Font("Arial", Font.PLAIN, 15));
-//        panelLeft.add(lblGender);
-//        rdoMale = new JRadioButton("男");
-//        rdoFemale = new JRadioButton("女");
-//        ButtonGroup bg = new ButtonGroup();
-//        bg.add(rdoMale);
-//        bg.add(rdoFemale);
-//        panelLeft.add(rdoMale);
-//        panelLeft.add(rdoFemale);
-//
-//        //年龄标签和文本框
-//        lblAge = new JLabel("年龄:");
-//        lblAge.setFont(new Font("Arial", Font.PLAIN, 15));
-//        panelLeft.add(lblAge);
-//        txtAge = new JTextField(3);
-//        txtAge.setFont(new Font("Arial", Font.PLAIN, 15));
-//        panelLeft.add(txtAge);
-//
-//        //提交按钮
-//        btnSubmit = new JButton("提交");
-//        btnSubmit.setFont(new Font("Arial", Font.PLAIN, 12));
-//        panelLeft.add(btnSubmit);
 
-        //提交按钮事件
-//        btnSubmit.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                //获取输入信息
-//                String name = txtName.getText();
-//                String gender = rdoMale.isSelected() ? "男" : "女";
-//                int age = Integer.parseInt(txtAge.getText());
-//                //显示弹窗
-//                JOptionPane.showMessageDialog(StudentForm.this,
-//                        "学生信息:\n" +
-//                                "姓名:" + name + "\n" +
-//                                "性别:" + gender + "\n" +
-//                                "年龄:" + age);
-//            }
-//        });
+        //姓名标签和文本框
+        lblName = new JLabel("姓名:");
+        lblName.setFont(new Font("Arial", Font.PLAIN, 15));
+        panelLeft.add(lblName);
+        txtName = new JTextField(15);
+        txtName.setFont(new Font("Arial", Font.PLAIN, 15));
+        panelLeft.add(txtName);
+
+        //性别标签,单选按钮
+        lblGender = new JLabel("性别:");
+        lblGender.setFont(new Font("Arial", Font.PLAIN, 15));
+        panelLeft.add(lblGender);
+        rdoMale = new JRadioButton("男");
+        rdoFemale = new JRadioButton("女");
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(rdoMale);
+        bg.add(rdoFemale);
+        panelLeft.add(rdoMale);
+        panelLeft.add(rdoFemale);
+
+        //年龄标签和文本框
+        lblAge = new JLabel("年龄:");
+        lblAge.setFont(new Font("Arial", Font.PLAIN, 15));
+        panelLeft.add(lblAge);
+        txtAge = new JTextField(3);
+        txtAge.setFont(new Font("Arial", Font.PLAIN, 15));
+        panelLeft.add(txtAge);
+
+        //提交按钮
+        btnSubmit = new JButton("提交");
+        btnSubmit.setFont(new Font("Arial", Font.PLAIN, 12));
+        panelLeft.add(btnSubmit);
+
+//        提交按钮事件
+        btnSubmit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //获取输入信息
+                String name = txtName.getText();
+                String gender = rdoMale.isSelected() ? "男" : "女";
+                int age = Integer.parseInt(txtAge.getText());
+                //显示弹窗
+                JOptionPane.showMessageDialog(StudentForm.this,
+                        "学生信息:\n" +
+                                "姓名:" + name + "\n" +
+                                "性别:" + gender + "\n" +
+                                "年龄:" + age);
+            }
+        });
         //登录按钮
         btnLogin = new JButton("登录");
         btnLogin.addActionListener(new ActionListener() {
