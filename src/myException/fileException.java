@@ -4,7 +4,7 @@ package myException;
  * 自定义的错误类型，
  * 错误一，打不开文件
  * 错误二，文件找不到
- * 错误三，
+ * 错误三，读取失败
  */
 public class fileException extends Exception{
     public fileException() {

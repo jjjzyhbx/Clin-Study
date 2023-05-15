@@ -4,33 +4,20 @@ package Draw.impl;
  */
 
 import Draw.Shape;
-
-import java.awt.*;
 import java.util.ArrayList;
 
 public class drawBoard  {
     private ArrayList<Shape> shapes = new ArrayList<>();
-//    private Graphics g;
-
     public drawBoard() {
-
     }
-
+    //将图案添加到画板中
     public void addShape(Shape s) {
        shapes.add(s);
     }
-
+    //实现画板绘制方法
     public void show() {
-
         for (Shape s : shapes) {
             s.draw();
-//            System.out.println(l.getStart().getX());
-//            System.out.println(l.getStart().getY());
-//            System.out.println(l.getEnd().getX());
-//            System.out.println(l.getEnd().getY());
-//            g.drawLine(1, 2, 3, 4);
         }
-
-//        g.dispose();
     }
 }

@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class demo {
     public static void main(String[] args) {
+        //创建一个画板
         drawBoard board = new drawBoard();
-
         while (true) {
             int choice = showMenu();
             if (choice == 1) {     // 选择画点
@@ -33,11 +33,11 @@ public class demo {
                         System.out.println("我画的自定义图形");
                     }
                 };
+                shape.draw();
             }
             board.show();   // 显示图形
         }
     }
-
     // 显示菜单
     private static int showMenu() {
         Scanner in = new Scanner(System.in);
@@ -49,7 +49,6 @@ public class demo {
         int choice = in.nextInt();
         return choice;
     }
-
     // 获得画点位置
     private static Dot getDot() {
         System.out.println("请输入点的x和y坐标:");
