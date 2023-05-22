@@ -1,5 +1,7 @@
-package Swing.Student;
+package Swing;
 
+
+import Swing.Student.StudentForm;
 
 import javax.swing.*;
 import java.awt.*;
@@ -55,11 +57,39 @@ public class MainForm extends JFrame {
         menuFile.add(mntmImport);
 
 
-        
-        menuFile = new JMenu("菜单1");
+
+        menuFile = new JMenu("数据");
         menuBar.add(menuFile);
-        menuFile = new JMenu("菜单2");
+        mntmImport = new JMenuItem("数据查询");
+        mntmImport.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                //打开数据导入窗口
+                StudentForm frm = new StudentForm();
+                frm.setVisible(true);
+            }
+        });
+        menuFile.add(mntmImport);
+        mntmImport = new JMenuItem("数据修改");
+        mntmImport.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                //打开数据导入窗口
+                StudentForm frm = new StudentForm();
+                frm.setVisible(true);
+            }
+        });
+        menuFile.add(mntmImport);
+
+        menuFile = new JMenu("用户管理");
         menuBar.add(menuFile);
+        mntmImport = new JMenuItem("用户");
+        mntmImport.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                //打开数据导入窗口
+                StudentForm frm = new StudentForm();
+                frm.setVisible(true);
+            }
+        });
+
         menuFile = new JMenu("菜单3");
         menuBar.add(menuFile);
 
